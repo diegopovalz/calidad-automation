@@ -3,23 +3,19 @@ package co.edu.udea.certificacion.calidad.stepdefinitions;
 import co.edu.udea.certificacion.calidad.questions.Validation;
 import co.edu.udea.certificacion.calidad.tasks.OpenThe;
 import co.edu.udea.certificacion.calidad.userinterfaces.UsuarioPage;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import net.serenitybdd.cucumber.CucumberWithSerenity;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
-import org.junit.runner.RunWith;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.core.IsEqual.equalTo;
 
-// @RunWith(CucumberWithSerenity.class)
 public class FindHomePageStepDefinitions {
 
     @Managed(driver = "chrome")
